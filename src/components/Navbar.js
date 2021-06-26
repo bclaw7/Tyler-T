@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class Header extends Component {
+class Navbar extends Component {
 	render() {
 		return (
-			<nav class="navbar navbar-expand-sm navbar-light bg-light">
+			<nav class="navbar navbar-expand-sm navbar-light bg-primary bg-gradient">
 				<div class="container-fluid">
 					<a class="navbar-brand nav-name" href="/Header">
 						Tyler T.
@@ -20,7 +20,7 @@ class Header extends Component {
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav">
+						<div class="navbar-nav mx-auto nav-menu">
 							<a class="nav-link active" aria-current="page" href="/Header">
 								Home
 							</a>
@@ -30,10 +30,9 @@ class Header extends Component {
 							<a class="nav-link" href="/Merch">
 								Merch
 							</a>
-                            <a class="nav-link" href="/About">
+							<a class="nav-link" href="/About">
 								About
 							</a>
-							
 						</div>
 					</div>
 				</div>
@@ -42,4 +41,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default Navbar;
