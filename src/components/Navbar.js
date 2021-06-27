@@ -3,13 +3,12 @@ import React, { Component } from "react";
 class Navbar extends Component {
 	render() {
 		return (
-			<nav class="navbar navbar-expand-sm navbar-light bg-primary bg-gradient">
-				<div class="container-fluid">
-					<a class="navbar-brand nav-name" href="/Header">
-						Tyler T.
+			<nav className="navbar sticky-top navbar-expand-sm navbar-light bg-primary bg-gradient">
+				<div className="container-fluid">
+					<a className="navbar-brand nav-name logo" href="/Header">Tyler T.
 					</a>
 					<button
-						class="navbar-toggler"
+						className="navbar-toggler"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNavAltMarkup"
@@ -17,11 +16,11 @@ class Navbar extends Component {
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span className="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav mx-auto nav-menu">
-							<a class="nav-link active" aria-current="page" href="/Header">
+					<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div className="navbar-nav mx-auto nav-menu">
+							<a className="nav-link active" aria-current="page" href="/Header">
 								Home
 							</a>
 							<a class="nav-link" href="/Tour">
@@ -32,6 +31,9 @@ class Navbar extends Component {
 							</a>
 							<a class="nav-link" href="/About">
 								About
+							</a>
+                            <a class="nav-link" href="/Contact">
+								Contact
 							</a>
 						</div>
 					</div>

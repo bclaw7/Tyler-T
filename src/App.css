@@ -1,12 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 .nav-name {
-    font-family: 'Rock Salt', Verdana;
-    font-weight: bold;
+	font-family: "Rock Salt", Verdana;
+	font-weight: bold;
 }
 
 .nav-menu {
-    font-family: 'Oswald', Verdana;
-    font-size: larger;
+	font-family: "Oswald", Verdana;
+	font-size: larger;
+	font-weight: bold;
+}
+
+.logo {
+	position: sticky;
+	right: 1rem;
+	top: 4rem;
+    max-width: 300px;
+	z-index: 1;
+}
+
+.tour {
+    font-family: "Rock Salt", Verdana;
+    text-align: center;
+}
+
+.beach {
+    position: static;
+    top: -20px;
+	z-index: -1;
 }
