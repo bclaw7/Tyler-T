@@ -5,7 +5,7 @@ class Navbar extends Component {
 		return (
 			<nav className="navbar sticky-top navbar-expand-sm navbar-light bg-primary bg-gradient">
 				<div className="container-fluid">
-					<a className="navbar-brand nav-name logo" href="/Header">Tyler T.
+					<a className="navbar-brand nav-name" href="/Header">Tyler T.
 					</a>
 					<button
 						className="navbar-toggler"

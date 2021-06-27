@@ -13,20 +13,10 @@
 }
 
 .logo {
-	position: sticky;
+	position: absolute;
 	right: 1rem;
-	top: 4rem;
-    max-width: 300px;
+	top: 10rem;
+    max-width: 40%;
 	z-index: 1;
 }
 
-.tour {
-    font-family: "Rock Salt", Verdana;
-    text-align: center;
-}
-
-.beach {
-    position: static;
-    top: -20px;
-	z-index: -1;
-}
