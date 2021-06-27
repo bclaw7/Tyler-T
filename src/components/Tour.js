@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 export class Tour extends Component {
 	render() {
 		return (
-			<div>
+			<div id="tour">
                 <Fade bottom duration={1000}>
 				<img
 					src="../img/mixed-media-beach.jpg"

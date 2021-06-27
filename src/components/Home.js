@@ -4,7 +4,7 @@ import Fade from "react-reveal";
 export class Home extends Component {
 	render() {
 		return (
-			<div>
+			<div id="home">
 				<Fade left duration={5000}>
 					<img
 						src="../img/mixed-media-logo.png"

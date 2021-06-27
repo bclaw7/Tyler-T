@@ -5,7 +5,8 @@ class Navbar extends Component {
 		return (
 			<nav className="navbar sticky-top navbar-expand-sm navbar-light bg-primary bg-gradient">
 				<div className="container-fluid">
-					<a className="navbar-brand nav-name" href="/Header">Tyler T.
+					<a className="navbar-brand nav-name" href="#home">
+						Tyler T.
 					</a>
 					<button
 						className="navbar-toggler"
@@ -20,11 +21,14 @@ class Navbar extends Component {
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 						<div className="navbar-nav mx-auto nav-menu">
-							<a className="nav-link active" aria-current="page" href="/Header">
-								Home
-							</a>
-							<a class="nav-link" href="/Tour">
+							<a class="nav-link" href="#tour">
 								Tour
+							</a>
+							<a class="nav-link" href="/Videos">
+								Videos
+							</a>
+							<a class="nav-link" href="/Photos">
+								Photos
 							</a>
 							<a class="nav-link" href="/Merch">
 								Merch
@@ -32,7 +36,7 @@ class Navbar extends Component {
 							<a class="nav-link" href="/About">
 								About
 							</a>
-                            <a class="nav-link" href="/Contact">
+							<a class="nav-link" href="/Contact">
 								Contact
 							</a>
 						</div>
