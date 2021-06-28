@@ -1,17 +1,10 @@
 import React, { Component } from "react";
-import { Fade } from "react-reveal";
+import beach from '../beach.jpg'
 
 export class Tour extends Component {
 	render() {
 		return (
-			<div id="tour">
-                <Fade bottom duration={1000}>
-				<img
-					src="../img/mixed-media-beach.jpg"
-					className="img-fluid beach"
-					alt="Beach"
-				/>
-                </Fade>
+			<div id="tour" style={{ backgroundImage: `url(${beach})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
 			</div>
 		);
 	}

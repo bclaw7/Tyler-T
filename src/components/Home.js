@@ -1,25 +1,12 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import tree from '../tree.jpg'
 
 export class Home extends Component {
 	render() {
 		return (
-			<div id="home">
-				<Fade left duration={5000}>
-					<img
-						src="../img/mixed-media-logo.png"
-						className="logo"
-						alt="Tyler T"
-					/>
-				</Fade>
-				<Fade top duration={1000}>
-					<img
-						src="../img/mixed-media-tree.jpg"
-						className="img-fluid tree"
-						alt="Tree of Life"
-					/>
-				</Fade>
-			</div>
+			<div id="home" style={{ backgroundImage: `url(${tree})`, backgroundSize: 'cover' }}>
+                <img src='../img/logo.png' alt="logo" className="mt-5 mb-5 img-fluid"/> 
+                </div>
 		);
 	}
 }
