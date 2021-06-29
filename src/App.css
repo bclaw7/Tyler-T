@@ -12,11 +12,7 @@
 	font-weight: bolder;
 }
 
-.logo {
-	position: absolute;
-	right: 1rem;
-	top: 10rem;
-    max-width: 40%;
-	z-index: 1;
+.tour {
+    font-family: "Rock Salt", Verdana;
 }
 

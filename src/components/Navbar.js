@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 
+
 class Navbar extends Component {
 	render() {
 		return (
-			<nav className="navbar sticky-top navbar-expand-sm navbar-light bg-primary bg-gradient">
+			<nav className="navbar sticky-top navbar-expand-sm navbar-light bg-primary bg-gradient px-sm-2">
 				<div className="container-fluid">
-					<a className="navbar-brand nav-name" href="#home">
+					<a className="navbar-brand nav-name" href="/">
 						Tyler T.
 					</a>
 					<button
@@ -24,19 +25,22 @@ class Navbar extends Component {
 							<a class="nav-link" href="#tour">
 								Tour
 							</a>
-							<a class="nav-link" href="/Videos">
-								Videos
-							</a>
-							<a class="nav-link" href="/Photos">
-								Photos
-							</a>
-							<a class="nav-link" href="/Merch">
+							<a class="nav-link" href="#merch">
 								Merch
 							</a>
-							<a class="nav-link" href="/About">
+                            <a class="nav-link" href="#music">
+								Music
+							</a>
+							<a class="nav-link" href="#photos">
+								Photos
+							</a>
+							<a class="nav-link" href="#videos">
+								Videos
+							</a>
+							<a class="nav-link" href="#about">
 								About
 							</a>
-							<a class="nav-link" href="/Contact">
+							<a class="nav-link" href="#contact">
 								Contact
 							</a>
 						</div>

@@ -1,12 +1,22 @@
 import React, { Component } from "react";
-import tree from '../tree.jpg'
+import Zoom from "react-reveal";
+import tree from "../tree.jpg";
 
 export class Home extends Component {
 	render() {
 		return (
-			<div id="home" style={{ backgroundImage: `url(${tree})`, backgroundSize: 'cover' }}>
-                <img src='../img/logo.png' alt="logo" className="mt-5 mb-5 img-fluid"/> 
-                </div>
+			<div
+				id="home"
+				style={{ backgroundImage: `url(${tree})`, backgroundSize: "cover" }}
+			>
+				<Zoom bottom>
+					<img
+						src="../img/logo.png"
+						alt="logo"
+						className="mt-5 mb-5 img-fluid"
+					/>
+				</Zoom>
+			</div>
 		);
 	}
 }
