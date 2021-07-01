@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter ,Switch, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -13,9 +13,11 @@ class App extends Component {
 				<Navbar />
                 <Home />
                 <Tour />
+                <BrowserRouter>
 				<Switch>
 					<Route path="/merchlist" component={MerchList} />
-				</Switch>
+                    </Switch>
+                </BrowserRouter>
 			</React.Fragment>
 		);
 	}
