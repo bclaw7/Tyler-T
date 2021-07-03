@@ -12,9 +12,6 @@
 	font-weight: bolder;
 }
 
-.tour {
-    font-family: "Rock Salt", Verdana;
-}
 
 :root{
     --mainBlue:#2a2a72;
@@ -25,14 +22,9 @@
 }
 body {
     font-family: "Oswald", verdana !important;
-    background: var(--mainWhite) !important;
-    color: var(--mainDark) !important;
-    height: 100%;
 }
 .text-title{
     font-family: 'Rock Salt', verdana;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
 }
 .text-blue{
     color: var(--mainBlue);

@@ -2,18 +2,19 @@ import React, { Component } from "react";
 import Product from "./Product";
 import Title from "./Title";
 import { ProductConsumer } from "../context";
-import beachflip from "../beach-down.jpg";
+import beach from "../beach.jpg";
 
 export default class ProductList extends Component {
 	render() {
 		return (
 			<React.Fragment>
+                <div style={{
+						backgroundImage: `url(${beach})`,
+						backgroundSize: "cover",
+					}}>
 				<div
 					className="py-5"
-					style={{
-						backgroundImage: `url(${beachflip})`,
-						backgroundSize: "cover",
-					}}
+					
 				>
 					<div id="productList" className="container">
 						<Title name="merch" title="store" />
@@ -28,6 +29,7 @@ export default class ProductList extends Component {
 						</div>
 					</div>
 				</div>
+                </div>
 			</React.Fragment>
 		);
 	}

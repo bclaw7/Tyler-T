@@ -24,16 +24,18 @@ export default class Product extends Component {
 									disabled={inCart ? true : false}
 									onClick={() => {
 										value.addToCart(id);
-                                        value.openModal(id);
+										value.openModal(id);
 									}}
 								>
 									{inCart ? (
-										<p className="text-capitalize mb-0" disabled>
-											{" "}
-											in cart
-										</p>
+										<Link to="/Cart">
+											<p className="text-capitalize mb-0" disabled>
+												{" "}
+												in cart
+											</p>
+										</Link>
 									) : (
-										<i className="fas fa-cart-plus" />
+										<p className="text-capitalize mb-0"> &#10133;{""}</p>
 									)}
 								</button>
 							</div>
@@ -96,7 +98,7 @@ const ProductWrapper = styled.div`
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		padding: 0.2rem 0.4rem;
+		padding: 1.4rem 1.6rem;
 		background: var(--lightBlue);
 		border: none;
 		color: var(--mainWhite);
