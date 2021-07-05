@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Tour from "./components/Tour";
+import Photos from "./components/Photos";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
@@ -24,6 +25,7 @@ class App extends Component {
 					<Route component={Default} />
 				</Switch>
                 <Tour />
+                <Photos />
 				<Modal />
 			</React.Fragment>
 		);
