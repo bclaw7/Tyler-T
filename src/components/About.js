@@ -10,14 +10,14 @@ export class About extends Component {
           backgroundImage: `url(${rings})`,
           backgroundSize: 'cover',
         }}>
-        <Title name='about' title='tyler t.' />
+        <Title name='about' title='tyler' />
         <div
           id='bio'
           className='container clearfix py-3
                 '>
           <img
             src='img/tylert-profile.jpg'
-            className='rounded col-md-6 float-md-end mb-3 ms-md-3'
+            className='img-profile rounded col-md-6 float-md-end mb-3 ms-md-3'
             width='200px'
             alt='Tyler T. profile pic'
           />
