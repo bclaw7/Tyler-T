@@ -12,6 +12,9 @@
 	font-weight: bolder;
 }
 
+#bio {
+    color:greenyellow;
+}
 
 :root{
     --mainBlue:#2a2a72;

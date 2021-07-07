@@ -23,8 +23,8 @@ class Navbar extends Component {
 					<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 						<div className="navbar-nav mx-auto nav-menu">
 							<Link to="/" className="nav-link">
-								Merch
-							</Link>
+								Merch 
+							</Link>                           
 							<a className="nav-link" href="#tour">
 								Tour
 							</a>

@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Tour from "./components/Tour";
 import Photos from "./components/Photos";
+import About from "./components/About";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
@@ -26,6 +27,7 @@ class App extends Component {
 				</Switch>
                 <Tour />
                 <Photos />
+                <About />
 				<Modal />
 			</React.Fragment>
 		);

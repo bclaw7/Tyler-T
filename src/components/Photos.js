@@ -1,57 +1,25 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-export class Photos extends Component {
-	render() {
-		return (
-			<div className="carousel slide carousel-fade" data-bs-ride="carousel">
-				<div className="carousel-inner">
-					<div className="carousel-item active">
-						<img
-							src="/img/tyert-sepia.jpg"
-							className="d-block w-100"
-							alt="live at Arizona Haunted Hotel"
-						/>
-					</div>
-					<div className="carousel-item">
-						<img
-							src="/img/tylert-radio.jpg"
-							className="d-block w-100"
-							alt="on air"
-						/>
-					</div>
-					<div className="carousel-item">
-						<img
-							src="/img/tylert-backyard.jpg"
-							className="d-block w-100"
-							alt="live at Kinney Farm"
-						/>
-					</div>
-				</div>
-				<button
-					className="carousel-control-prev"
-					type="button"
-					data-bs-target="#carouselExampleFade"
-					data-bs-slide="prev"
-				>
-					<span
-						className="carousel-control-prev-icon"
-						aria-hidden="true"
-					></span>
-					<span className="visually-hidden">Previous</span>
-				</button>
-				<button
-					className="carousel-control-next"
-					type="button"
-				>
-					<span
-						className="carousel-control-next-icon"
-						aria-hidden="true"
-					></span>
-					<span className="visually-hidden">Next</span>
-				</button>
-			</div>
-		);
-	}
-}
 
-export default Photos;
+export default class Photos extends Component {
+    render() {
+        return (
+            <Carousel>
+                <div  id="photos">
+                    <img src="img/tylert-backyard.jpg" alt="live at backyard" />
+                    <p className="legend">Live at Kinney Family Farm - June 2021</p>
+                </div>
+                <div>
+                    <img src="img/tylert-radio.jpg" alt="on air" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="img/tylert-sepia.jpg" alt="live at haunted hotel" />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
+        );
+    }
+};
