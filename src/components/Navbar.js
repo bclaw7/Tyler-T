@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
@@ -20,9 +21,9 @@ class Navbar extends Component {
           </button>
           <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
             <div className='navbar-nav mx-auto nav-menu'>
-              <a className='nav-link' href='#merch'>
+              <Link to='/productlist' className='nav-link text-warning'>
                 Merch
-              </a>
+              </Link>
               <a className='nav-link' href='#tour'>
                 Tour
               </a>

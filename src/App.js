@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Tour from './components/Tour';
 import Photos from './components/Photos';
 import About from './components/About';
+import Videos from './components/Videos';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
@@ -26,8 +27,10 @@ class App extends Component {
           <Route component={Default} />
         </Switch>
         <Tour />
+        <Videos />
         <Photos />
         <About />
+
         <Modal />
       </React.Fragment>
     );
