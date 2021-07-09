@@ -11,6 +11,7 @@ import Videos from './components/Videos';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
+import Contact from './components/Contact';
 import Default from './components/Default';
 import Modal from './components/Modal';
 
@@ -30,7 +31,7 @@ class App extends Component {
         <Videos />
         <Photos />
         <About />
-
+        <Contact />
         <Modal />
       </React.Fragment>
     );
