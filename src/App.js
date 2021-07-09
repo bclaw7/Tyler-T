@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Switch, Route } from 'react-router';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,9 +17,11 @@ import Modal from './components/Modal';
 
 class App extends Component {
   render() {
+    var urlArray = window.location.href.split('/');
+    this.state = { url: urlArray[urlArray.length - 1] };
     return (
       <React.Fragment>
-        <Navbar />
+        <Navbar url={this.state.url} />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/productlist' component={ProductList} />
