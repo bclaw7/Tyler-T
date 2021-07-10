@@ -7,7 +7,7 @@ export class Home extends Component {
   render() {
     return (
       <div style={{ backgroundImage: `url(${tree})`, backgroundSize: 'cover' }}>
-        <Zoom bottom>
+        <Zoom right>
           <img
             src='../img/logo.png'
             alt='logo'
@@ -15,10 +15,10 @@ export class Home extends Component {
           />
         </Zoom>
         <div class='position-relative'>
-          <div className='d-grid gap-2 position-absolute bottom-0 end-0 pb-5 pe-5'>
+          <div className='d-grid gap-2 position-absolute bottom-0 end-0 pb-5 pe-5 mb-2'>
             <Link to='/productlist'>
-              <button type='button' className='btn btn-outline-danger btn-lg'>
-                <strong>Check out the Merch Store !</strong>
+              <button type='button' className='btn btn-danger btn-lg'>
+                <strong className='fs-3'>Check Out The Merch Store !</strong>
               </button>
             </Link>
           </div>

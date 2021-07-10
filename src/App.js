@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Tour from './components/Tour';
 import PhotoTitle from './components/PhotoTitle';
@@ -20,7 +19,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/productlist' component={ProductList} />

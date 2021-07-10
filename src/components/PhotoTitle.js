@@ -8,6 +8,7 @@ export class PhotoTitle extends Component {
       <React.Fragment>
         <div
           id='tour'
+          className='pt-5'
           style={{
             backgroundImage: `url(${beach})`,
             backgroundSize: 'cover',

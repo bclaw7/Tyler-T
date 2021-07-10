@@ -6,6 +6,7 @@ export class Videos extends Component {
   render() {
     return (
       <div
+        className='pt-5'
         id='videos'
         style={{
           backgroundImage: `url(${downbeach})`,

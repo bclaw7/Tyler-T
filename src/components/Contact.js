@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import paper from '../paper.jpeg';
+import Title from './Title';
 
 const ContactForm = () => {
   const [status, setStatus] = useState('Submit');
@@ -23,21 +25,38 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor='name'>Name:</label>
-        <input type='text' id='name' required />
+    <div
+      className='py-5'
+      style={{ backgroundImage: `url(${paper})`, backgroundSize: 'cover' }}>
+      <Title name='contact' title='us' />
+      <div className='container'>
+        <form onSubmit={handleSubmit}>
+          <div className='mb-3'>
+            <label htmlFor='name' className='form-label fs-3 text-primary'>
+              Name:
+            </label>
+            <input type='text' id='name' className='form-control' required />
+          </div>
+          <div className='mb-3'>
+            <label htmlFor='email' className='form-label fs-3 text-primary'>
+              Email:
+            </label>
+            <input type='email' id='email' className='form-control' required />
+          </div>
+          <div className='mb-3'>
+            <label htmlFor='message' className='form-label fs-3 text-primary'>
+              Message:
+            </label>
+            <textarea id='message' className='form-control' rows='3' required />
+          </div>
+          <div className='d-grid gap-2 mb-3 pt-3'>
+            <button type='submit' className='btn btn-success btn-lg fs-3'>
+              {status}
+            </button>
+          </div>
+        </form>
       </div>
-      <div>
-        <label htmlFor='email'>Email:</label>
-        <input type='email' id='email' required />
-      </div>
-      <div>
-        <label htmlFor='message'>Message:</label>
-        <textarea id='message' required />
-      </div>
-      <button type='submit'>{status}</button>
-    </form>
+    </div>
   );
 };
 

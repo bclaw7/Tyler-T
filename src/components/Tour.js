@@ -7,6 +7,7 @@ export class Tour extends Component {
     return (
       <React.Fragment>
         <div
+          className='pt-5'
           id='tour'
           style={{
             backgroundImage: `url(${beach})`,
