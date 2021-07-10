@@ -19,18 +19,18 @@ export class Videos extends Component {
               width='560'
               height='315'
               src='https://www.youtube.com/embed/vNXwM0cXtlk'
-              frameborder='0'
+              frameBorder='0'
               allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-              allowfullscreen
+              allowFullScreen
               title='live at Kinney Farm'></iframe>
             <iframe
               width='560'
               height='315'
               src='https://www.youtube.com/embed/qtHv_m7_KyE'
               title='Tyler T. live at Blind Pig'
-              frameborder='0'
+              frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowfullscreen></iframe>
+              allowFullScreen></iframe>
           </div>
         </div>
       </div>

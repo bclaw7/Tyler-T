@@ -7,6 +7,13 @@ export default class Photos extends Component {
     return (
       <Carousel>
         <div>
+          <img
+            src='img/tylert-aggie.jpeg'
+            alt='live at The Aggie, Fort Collins, Colorado'
+          />
+          <p className='legend'>Live at The Aggie - Fort Collins, CO - 2015</p>
+        </div>
+        <div>
           <img src='img/tylert-backyard.jpg' alt='live at backyard' />
           <p className='legend'>
             Live at Kinney Farm - Fort Collins, CO - 2021
@@ -24,13 +31,6 @@ export default class Photos extends Component {
           <p className='legend'>
             Live at Hotel Monte Vista - Flagstaff, AZ - 2010
           </p>
-        </div>
-        <div>
-          <img
-            src='img/tylert-aggie.jpeg'
-            alt='live at The Aggie, Fort Collins, Colorado'
-          />
-          <p className='legend'>Live at The Aggie - Fort Collins, CO - 2015</p>
         </div>
       </Carousel>
     );

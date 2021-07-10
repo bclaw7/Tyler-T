@@ -14,7 +14,7 @@ export class About extends Component {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}>
-          <Title name='about' title='tyler' />
+          <Title name='tyler' title='t.' />
           <div
             id='bio'
             className='container clearfix py-3
@@ -26,7 +26,7 @@ export class About extends Component {
               alt='Tyler T. profile pic'
             />
 
-            <p>
+            <p className='lead'>
               Tyler T.’s music is energetic and unpredictable, intriguing and
               danceable, complex yet groovy. Innovative and eclectic, he creates
               a rich and textured sound by crossing and combining genres

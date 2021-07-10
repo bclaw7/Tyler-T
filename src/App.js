@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Tour from './components/Tour';
+import PhotoTitle from './components/PhotoTitle';
 import Photos from './components/Photos';
 import About from './components/About';
 import Videos from './components/Videos';
@@ -29,6 +30,7 @@ class App extends Component {
         </Switch>
         <Tour />
         <Videos />
+        <PhotoTitle />
         <Photos />
         <About />
         <Contact />

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 class Navbar extends Component {
   render() {
     return (
-      <nav className='navbar sticky-top navbar-expand-sm navbar-light bg-primary bg-gradient px-sm-2'>
+      <nav className='navbar navbar-expand-lg navbar-light bg-primary bg-gradient px-sm-2'>
         <div className='container-fluid'>
-          <a className='navbar-brand nav-name' href='/'>
+          <a className='navbar-brand text-title' href='/'>
             Tyler T.
           </a>
           <button
@@ -20,12 +20,15 @@ class Navbar extends Component {
             <span className='navbar-toggler-icon'></span>
           </button>
           <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
-            <div className='navbar-nav mx-auto nav-menu'>
-              <Link to='/productlist' className='nav-link text-warning'>
+            <div className='navbar-nav'>
+              <a className='nav-link active' aria-current='page' href='/'>
+                Home
+              </a>
+              <Link to='/productlist' className='nav-link'>
                 Merch
               </Link>
               <a className='nav-link' href='#tour'>
-                Tour
+                Shows
               </a>
               <a className='nav-link' href='#music'>
                 Music

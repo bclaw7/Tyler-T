@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-.nav-name {
-	font-family: "Rock Salt", Verdana;
-	font-weight: bold;
-}
-
-.nav-menu {
-	font-family: "Oswald", Verdana;
-	font-size: larger;
-	font-weight: bolder;
-}
-
 :root{
     --mainBlue:#2a2a72;
     --lightBlue:#009ffd;
@@ -22,6 +11,12 @@
 body {
     font-family: "Oswald", verdana !important;
 }
+.nav-menu {
+	font-family: "Oswald", Verdana;
+	font-size: larger;
+	font-weight: bolder;
+}
+
 .text-title{
     font-family: 'Rock Salt', verdana;
 }

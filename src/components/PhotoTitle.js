@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import beach from '../beach.jpg';
 import Title from './Title';
+import beach from '../beach.jpg';
 
-export class Tour extends Component {
+export class PhotoTitle extends Component {
   render() {
     return (
       <React.Fragment>
@@ -12,11 +12,11 @@ export class Tour extends Component {
             backgroundImage: `url(${beach})`,
             backgroundSize: 'cover',
           }}>
-          <Title name='shows' title='!!!' />
+          <Title name='photo' title='gallery' />
         </div>
       </React.Fragment>
     );
   }
 }
 
-export default Tour;
+export default PhotoTitle;
