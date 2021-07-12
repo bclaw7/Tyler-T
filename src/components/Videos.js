@@ -15,7 +15,7 @@ export class Videos extends Component {
         }}>
         <Title name='live' title='videos' />
         <div className='container'>
-          <div className='mx-auto text-center'>
+          <div className='row justify-content-md-center pb-3'>
             <iframe
               width='560'
               height='315'
@@ -24,6 +24,8 @@ export class Videos extends Component {
               allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
               allowFullScreen
               title='live at Kinney Farm'></iframe>
+          </div>
+          <div className='row justify-content-md-center pb-3'>
             <iframe
               width='560'
               height='315'

@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 export default class Photos extends Component {
   render() {
     return (
       <Carousel>
+        <div>
+          <img src='img/tylert-collage.jpg' alt='collage' />
+          <p className='legend'>Check out the new album: Wildflower</p>
+        </div>
         <div>
           <img
             src='img/tylert-aggie.jpeg'
