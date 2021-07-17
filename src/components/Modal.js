@@ -22,7 +22,9 @@ export default class Modal extends Component {
                     <div
                       id='modal'
                       className='col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize'>
-                      <h5>item added to cart</h5>
+                      <h5 className='display-6 text-success'>
+                        item added to cart
+                      </h5>
                       <img src={img} className='img-fluid' alt='product' />
                       <h5>{title}</h5>
                       <h5 className='text-muted'>price : $ {price}</h5>

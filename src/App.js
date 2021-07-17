@@ -14,6 +14,7 @@ import Cart from './components/Cart';
 import Contact from './components/Contact';
 import Default from './components/Default';
 import Modal from './components/Modal';
+import Login from './components/Login';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path='/productlist' component={ProductList} />
           <Route path='/details' component={Details} />
           <Route path='/cart' component={Cart} />
+          <Route path='/tlogin' component={Login} />
           <Route component={Default} />
         </Switch>
         <Tour />

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context';
 import PropTypes from 'prop-types';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default class Product extends Component {
   render() {
@@ -27,16 +28,12 @@ export default class Product extends Component {
                   }}>
                   {inCart ? (
                     <Link to='/Cart'>
-                      <p className='text-capitalize mb-0' disabled>
-                        {' '}
-                        in cart
-                      </p>
+                      <p
+                        className='bi bi-cart-check-fill fs-1 mb-0'
+                        disabled></p>
                     </Link>
                   ) : (
-                    <p className='bi bi-bag-plus text-capitalize mb-0'>
-                      {' '}
-                      &#10133;{''}
-                    </p>
+                    <p className='bi bi-cart-plus fs-1 mb-0'></p>
                   )}
                 </button>
               </div>

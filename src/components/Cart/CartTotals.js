@@ -13,7 +13,7 @@ export default function CartTotals({ value, history }) {
               <button
                 className='btn btn-outline-info text-uppercase mb-3 px-5'
                 type='button'>
-                continue shopping
+                <i className='bi bi-cart'></i> continue shopping
               </button>
             </Link>
             <Link to='/'>
@@ -21,7 +21,7 @@ export default function CartTotals({ value, history }) {
                 className='btn btn-outline-danger text-uppercase mb-3 px-5'
                 type='button'
                 onClick={() => clearCart()}>
-                clear cart
+                <i className='bi bi-cart-x'></i> clear cart
               </button>
             </Link>
             <h5>
