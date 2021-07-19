@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context';
 import PropTypes from 'prop-types';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default class Product extends Component {
   render() {
@@ -28,12 +27,12 @@ export default class Product extends Component {
                   }}>
                   {inCart ? (
                     <Link to='/Cart'>
-                      <p
+                      <i
                         className='bi bi-cart-check-fill fs-1 mb-0'
-                        disabled></p>
+                        disabled></i>
                     </Link>
                   ) : (
-                    <p className='bi bi-cart-plus fs-1 mb-0'></p>
+                    <i className='bi bi-cart-plus fs-1 mb-0'></i>
                   )}
                 </button>
               </div>
