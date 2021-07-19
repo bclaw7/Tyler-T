@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import rings from '../tree-rings.jpg';
-import Title from './Title';
+import Title from './images/Title';
 import styled from 'styled-components';
 
 export class About extends Component {

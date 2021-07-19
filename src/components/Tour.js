@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import beach from '../beach.jpg';
+import beach from '../images/beach.jpg';
 import Title from './Title';
 
 export class Tour extends Component {

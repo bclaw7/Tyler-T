@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from './Title';
-import downbeach from '../beach-down.jpg';
+import downbeach from '../images/beach-down.jpg';
 
 export class Videos extends Component {
   render() {

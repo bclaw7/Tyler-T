@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from './Title';
-import beach from '../beach.jpg';
+import beach from '../images/beach.jpg';
 
 export class PhotoTitle extends Component {
   render() {

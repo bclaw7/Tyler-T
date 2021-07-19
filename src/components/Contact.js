@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import paper from '../paper.jpeg';
+import paper from '../images/paper.jpeg';
 import Title from './Title';
 
 const ContactForm = () => {
