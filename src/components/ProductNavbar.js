@@ -9,11 +9,11 @@ class ProductNavbar extends Component {
       <Navbar expand='lg' variant='light' bg='light'>
         <Container>
           <Link to='/'>
-            <Navbar.Brand className='text-title'>Tyler T.</Navbar.Brand>
+            <Navbar.Brand className='nav-title'>Tyler T.</Navbar.Brand>
           </Link>
           <Link to='/cart'>
             <Navbar.Brand className='justify-content-end'>
-              <i className='bi bi-cart'></i>
+              <i className='bi bi-cart cart-icon'></i>
             </Navbar.Brand>
           </Link>
         </Container>

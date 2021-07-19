@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PayPalButton from './PayPalButton';
+import { Container, Row } from 'react-bootstrap';
 
 export default function CartTotals({ value, history }) {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
   return (
     <React.Fragment>
-      <div className='container'>
-        <div className='row'>
+      <Container>
+        <Row>
           <div className='col-10 mt-2 mb-5 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-end'>
             <Link to='/productlist'>
               <button
@@ -42,8 +43,8 @@ export default function CartTotals({ value, history }) {
               history={history}
             />
           </div>
-        </div>
-      </div>
+        </Row>
+      </Container>
     </React.Fragment>
   );
 }

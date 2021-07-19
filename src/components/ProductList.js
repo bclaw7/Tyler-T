@@ -9,20 +9,19 @@ export default class ProductList extends Component {
   render() {
     return (
       <React.Fragment>
-        <ProductNavbar>
-          <Container>
-            <Title name='merch' title='store' />
-            <Row>
-              <ProductConsumer>
-                {(value) => {
-                  return value.products.map((product) => {
-                    return <Product key={product.id} product={product} />;
-                  });
-                }}
-              </ProductConsumer>
-            </Row>
-          </Container>
-        </ProductNavbar>
+        <ProductNavbar />
+        <Container>
+          <Title name='merch' title='store' />
+          <Row>
+            <ProductConsumer>
+              {(value) => {
+                return value.products.map((product) => {
+                  return <Product key={product.id} product={product} />;
+                });
+              }}
+            </ProductConsumer>
+          </Row>
+        </Container>
       </React.Fragment>
     );
   }

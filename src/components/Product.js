@@ -26,7 +26,7 @@ export default class Product extends Component {
                     value.openModal(id);
                   }}>
                   {inCart ? (
-                    <Link to='/Cart'>
+                    <Link to='/cart'>
                       <i
                         className='bi bi-cart-check-fill fs-1 mb-0'
                         disabled></i>
